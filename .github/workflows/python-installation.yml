@@ -5,6 +5,8 @@ on: [push]
 jobs:
   build:
     strategy:
+      max-parallel: 2
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-12, windows-latest]
         py-version: [3.7, 3.8, 3.9]
