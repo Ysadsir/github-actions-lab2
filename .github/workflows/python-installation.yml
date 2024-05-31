@@ -1,7 +1,6 @@
 name: Installing Python
 
 on: [push]
-concurrency: 
 
 jobs:
   build:
